@@ -49,7 +49,5 @@ SIMA の点データや結線データのレンダリングには対応してい
 
 npm でインストールされるパッケージの他に変換の機関部部は [sima2geojson.js](https://github.com/KMR-zoar/sima2geojson.js) のコードを内包しています｡
 
-Internet Explorer で動作しませんでした｡
-
 ----
 MIT License 2018 Hiroyuki Kimura.
