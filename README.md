@@ -1,7 +1,5 @@
 # SIMA Render Extension
 
-# SIMA Render Extension
-
 地理院地図に測量データ共通フォーマット(旧版SIMA)をレンダリングする機能を追加します。
 
 ## 目的

@@ -50,15 +50,14 @@ var optionArray = function() {
   return options.join('\n');
 };
 
-var selectBox =
-  `
-<div id='selectProjectionDiv'>
-<select name="projection" id="selectProjection">` +
+var selectBox = '<div id="selectProjectionDiv">' +
+  '<select name="projection" id="selectProjection">' +
   optionArray() +
-  `</select>
-</div>
-`;
+  '</select></div>';
 
-$('.logoarea').append(selectBox);
+var targetElement = document.getElementsByClassName('logoarea')[0];
+var removeObject = targetElement.firstElementChild;
+targetElement.removeChild(removeObject);
+$(targetElement).append(selectBox);
 
 $('#selectProjection').val('6677');
