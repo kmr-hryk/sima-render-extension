@@ -1,0 +1,23 @@
+{
+  "name": "sima-render-extension",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "debug": "webpack",
+    "release": "webpack --release",
+    "apply": "node main.js"
+  },
+  "author": "Hiroyuki Kimura",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "iconv-lite": "^0.4.23",
+    "proj4": "^2.4.4",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}

@@ -1,0 +1,34 @@
+﻿diff --git a/index.html b/index.html
+index 645072d..807e297 100644
+--- a/index.html
++++ b/index.html
+@@ -54,7 +54,7 @@
+     <script type="text/javascript" src="js.lib/html2canvas.js"></script>
+ 
+     <link rel="stylesheet" type="text/css" href="./css/gsimaps.css"/>
+-
++    <script type="text/javascript" src="js.lib/override.js"></script>
+     <script type="text/javascript" src="js/gsimaps.js"></script>
+     <script type="text/javascript" src="js/muni.js"></script>
+     <script type="text/javascript" src="js/jiki.js"></script>
+@@ -195,7 +195,7 @@
+         </div>
+     </div>
+     
+-    
++    <script type="text/javascript" src="js.lib/override-ui.js"></script>
+ 
+ </body>
+ 
+diff --git a/js/gsimaps.js b/js/gsimaps.js
+index fdbf393..82a71ac 100644
+--- a/js/gsimaps.js
++++ b/js/gsimaps.js
+@@ -29576,6 +29576,7 @@ GSI.GSIMaps = L.Class.extend( {
+ 				oReader.onload = L.bind(function(e){
+ 					if(e.target.readyState == FileReader.DONE){
+ 						var v = e.target.result;
++						v = window.convertSIMA2GeoJSON(v, fname);
+ 						this._sakuzuList.loadFromText(v, fname);
+ 					}
+ 				},this );

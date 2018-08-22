@@ -1,0 +1,5 @@
+gsimaps
+*.sim
+*.geojson
+node_modules
+dist/*.js
