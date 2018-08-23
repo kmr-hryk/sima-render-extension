@@ -11,7 +11,14 @@
 - Node.js v8
 - Git
 
+または
+
+- Docker
+- Git
+
 ## 使い方
+
+### Node.js + Git
 
 まず sima-render-extension のリポジトリをクローンします。
 
@@ -40,6 +47,24 @@ npm run apply
 ![Projection select](./images/projection.png)
 
 選択したら地図上に SIMA ファイルをドロップすると SIMA ファイルの画地データがレンダリングされます｡
+
+
+### Docker + Git
+
+まず sima-render-extension のリポジトリをクローンします。
+
+```
+git clone https://github.com/kmr-hryk/sima-render-extension.git
+```
+
+コンテナをビルドして実行します。
+
+```
+docker build . -t sre
+docker run -d -p 80:80 sre:latest
+```
+
+ホストの80番ポートにアクセスすると拡張した地理院地図が表示されます。
 
 ## その他
 
